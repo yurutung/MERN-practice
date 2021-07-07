@@ -19,9 +19,8 @@ class TodoRepoImpl implements TodoRepo {
         // TODO: Should get Todo from mongoDB
     }
 
-    async addTodo(todoBody: ITodo): Promise<ITodo> {
-        return Todo.create(todoBody)
-    }
+    // TODO: Should add Todo into mongoDB
+
 
     async updateTodo(id: string, todoBody: ITodo): Promise<ITodo | null> {
         // TODO: Should update Todo to mongoDB
