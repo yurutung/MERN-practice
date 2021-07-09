@@ -28,7 +28,8 @@ class TodoRepoImpl implements TodoRepo {
 
     async updateTodo(id: string, todoBody: ITodo): Promise<ITodo | null> {
         // TODO: Should update Todo to mongoDB
-        return Todo.findByIdAndUpdate(id, todoBody)
+        // new: bool - true to return the modified document rather than the original. defaults to false
+        return Todo.findByIdAndUpdate(id, todoBody, {new: true})
     }
 
     async deleteTodo(id: string): Promise<ITodo | null> {
