@@ -45,7 +45,7 @@ const updateTodo = async (todoBody: ITodo): Promise<AxiosResponse<ITodo>> => {
 const deleteTodo = async (id: string): Promise<AxiosResponse> => {
     // TODO: Should call DELETE endpoint
     try {
-        const res = await axios.delete(`/api/todos/${id}}`)
+        const res = await axios.delete(`/api/todos/${id}`)
         return res
     } catch (error) {
         console.error(`DELETE /api/todos/${id} ERROR: ${error}`)
