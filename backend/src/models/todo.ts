@@ -1,6 +1,7 @@
 import { ITodo } from './../types/todo'
 import { model, Schema } from 'mongoose'
 
+// set mongoDB schema
 const todoSchema: Schema = new Schema(
     {
         name: {

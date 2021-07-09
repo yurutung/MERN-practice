@@ -1,6 +1,7 @@
 import mongoose from 'mongoose'
 import * as dotEnv from 'dotenv'
 
+// set mongoDB connect
 dotEnv.config()
 const host = process.env.MONGO_HOST || 'localhost'
 const port = process.env.MONGO_PORT || 27017

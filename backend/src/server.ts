@@ -18,6 +18,7 @@ const startFastify: (port: number) => FastifyInstance<Server, IncomingMessage, S
         establishConnection()
     })
 
+    // frontend connect to backend
     server.register(FastifyStatic, {
         root: path.join(__dirname, '../../frontend/build'),
         prefix: '/'
