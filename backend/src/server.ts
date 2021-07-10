@@ -28,6 +28,7 @@ const startFastify: (port: number) => FastifyInstance<Server, IncomingMessage, S
         return reply.status(200).send({ msg: 'pong' })
     })
 
+    // TodoRouter(routes/todo.ts) add prefix /api
     server.register(TodoRouter, { prefix: '/api' })
 
     return server

@@ -1,3 +1,4 @@
+// api: connect to backend
 import axios, { AxiosResponse } from 'axios'
 
 const getTodos = async (): Promise<AxiosResponse<Array<ITodo>>> => {

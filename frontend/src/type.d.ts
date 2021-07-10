@@ -1,3 +1,4 @@
+// setting type interface
 interface ITodo {
     _id: string
     name: string

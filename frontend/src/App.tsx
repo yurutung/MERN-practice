@@ -5,9 +5,16 @@ import { getTodos, addTodo, updateTodo, deleteTodo } from './API'
 import './App.css'
 
 const App = () => {
+  // useState(起始值)
+  // 宣告叫 todos 的 state 變數，起始值為 []
+  // React 在 re-render 間會記住目前的值，並將它提供給 function。
+  // 如果我們需要更新目前的 todos，我們可以呼叫 setTodos。
   const [todos, setTodos] = useState<ITodo[]>([])
 
+  // 相似於 componentDidMount 和 componentDidUpdate:
   useEffect(() => {
+    // componentDidMount
+    // 告訴 React 你的 component 需要在 render 後做一些事情。
     fetchTodos()
   }, [])
 
